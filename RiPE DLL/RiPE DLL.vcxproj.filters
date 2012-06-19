@@ -24,12 +24,6 @@
     <Filter Include="Header Files\RiME">
       <UniqueIdentifier>{2dcac88d-b6b6-40b7-98c2-6a20375dd7e5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\moopledev">
-      <UniqueIdentifier>{dfbc327c-e341-42f1-b19e-8897db65dc5d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\moopledev">
-      <UniqueIdentifier>{06617e80-f61c-4b32-8681-d6696acbcbf9}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lasterror.cpp">
@@ -85,9 +79,6 @@
     </ClCompile>
     <ClCompile Include="RiPE\wsasendtofacade.cpp">
       <Filter>Source Files\RiPE</Filter>
-    </ClCompile>
-    <ClCompile Include="moopledev\maplecustomencryption.cpp">
-      <Filter>Source Files\moopledev</Filter>
     </ClCompile>
     <ClCompile Include="StringMangler.cpp">
       <Filter>Source Files</Filter>
@@ -165,9 +156,6 @@
     </ClInclude>
     <ClInclude Include="RiPE\wsasendtofacade.h">
       <Filter>Header Files\RiPE</Filter>
-    </ClInclude>
-    <ClInclude Include="moopledev\maplecustomencryption.h">
-      <Filter>Header Files\moopledev</Filter>
     </ClInclude>
     <ClInclude Include="StringMangler.h">
       <Filter>Header Files</Filter>

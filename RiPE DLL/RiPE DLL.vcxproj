@@ -82,7 +82,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="memreadwrite.cpp" />
     <ClCompile Include="millitime.cpp" />
-    <ClCompile Include="moopledev\maplecustomencryption.cpp" />
     <ClCompile Include="packetitem.cpp" />
     <ClCompile Include="RiME\memscan.cpp" />
     <ClCompile Include="ripecontainer.cpp" />
@@ -107,7 +106,6 @@
     <ClInclude Include="lasterror.h" />
     <ClInclude Include="memreadwrite.h" />
     <ClInclude Include="millitime.h" />
-    <ClInclude Include="moopledev\maplecustomencryption.h" />
     <ClInclude Include="packetitem.h" />
     <ClInclude Include="RiME\memscan.hpp" />
     <ClInclude Include="ripecontainer.h" />
