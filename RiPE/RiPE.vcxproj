@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="adBrowserDlg.h" />
+    <ClInclude Include="AddPluginDlg.h" />
+    <ClInclude Include="adSupport.h" />
+    <ClInclude Include="artProvider.h" />
+    <ClInclude Include="asmeditor.h" />
+    <ClInclude Include="atohx.h" />
+    <ClInclude Include="breakpoint.h" />
+    <ClInclude Include="cloakdll.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="gameVersions.h" />
+    <ClInclude Include="hexconverter.hpp" />
+    <ClInclude Include="hookhop.h" />
+    <ClInclude Include="inject.hpp" />
+    <ClInclude Include="InjectorGadgetMain.h" />
+    <ClInclude Include="lasterror.h" />
+    <ClInclude Include="MemoryModule.h" />
+    <ClInclude Include="memreadwrite.h" />
+    <ClInclude Include="millitime.h" />
+    <ClInclude Include="NewScriptDlg.h" />
+    <ClInclude Include="PluginSearchDlg.h" />
+    <ClInclude Include="privilege.h" />
+    <ClInclude Include="processutility.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="RiME\memscan.hpp" />
+    <ClInclude Include="RiPE.h" />
+    <ClInclude Include="RiPE\communicationlayer.h" />
+    <ClInclude Include="RiPE\gameSelectMenu.h" />
+    <ClInclude Include="RiPE\genericfacade.h" />
+    <ClInclude Include="RiPE\hexspinctrl.h" />
+    <ClInclude Include="RiPE\hookinterface.h" />
+    <ClInclude Include="RiPE\OpcodesDlg.h" />
+    <ClInclude Include="RiPE\operator.h" />
+    <ClInclude Include="RiPE\packet.h" />
+    <ClInclude Include="RiPE\packetitem.hpp" />
+    <ClInclude Include="RiPE\partialpacket.hpp" />
+    <ClInclude Include="RiPE\resource.h" />
+    <ClInclude Include="RiPE\RiPEApp.h" />
+    <ClInclude Include="RiPE\script_variable.h" />
+    <ClInclude Include="sortinglistview.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringMangler.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="UploadScriptDlg.h" />
+    <ClInclude Include="usefulFunctions.h" />
+    <ClInclude Include="utility.h" />
+    <ClInclude Include="webutility.h" />
+    <ClInclude Include="webview\webview.h" />
+    <ClInclude Include="webview\wxIETest2\wxiepanel.h" />
+    <ClInclude Include="wx_pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adBrowserDlg.cpp" />
+    <ClCompile Include="AddPluginDlg.cpp" />
+    <ClCompile Include="adSupport.cpp" />
+    <ClCompile Include="artProvider.cpp" />
+    <ClCompile Include="asmeditor.cpp" />
+    <ClCompile Include="breakpoint.cpp" />
+    <ClCompile Include="cloakdll.cpp" />
+    <ClCompile Include="hexconverter.cpp" />
+    <ClCompile Include="InjectorGadgetMain.cpp" />
+    <ClCompile Include="lasterror.cpp" />
+    <ClCompile Include="MemoryModule.cpp" />
+    <ClCompile Include="memreadwrite.cpp" />
+    <ClCompile Include="millitime.cpp" />
+    <ClCompile Include="NewScriptDlg.cpp" />
+    <ClCompile Include="PluginSearchDlg.cpp" />
+    <ClCompile Include="processutility.cpp" />
+    <ClCompile Include="RiME\memscan.cpp" />
+    <ClCompile Include="RiPE.cpp" />
+    <ClCompile Include="RiPE\communicationlayer.cpp" />
+    <ClCompile Include="RiPE\gameSelectMenu.cpp" />
+    <ClCompile Include="RiPE\genericfacade.cpp" />
+    <ClCompile Include="RiPE\hexspinctrl.cpp" />
+    <ClCompile Include="RiPE\main.cpp" />
+    <ClCompile Include="RiPE\OpcodesDlg.cpp" />
+    <ClCompile Include="RiPE\operator.cpp" />
+    <ClCompile Include="RiPE\packet.cpp" />
+    <ClCompile Include="RiPE\RiPEApp.cpp" />
+    <ClCompile Include="sortinglistview.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringMangler.cpp" />
+    <ClCompile Include="UploadScriptDlg.cpp" />
+    <ClCompile Include="usefulFunctions.cpp" />
+    <ClCompile Include="webutility.cpp" />
+    <ClCompile Include="webview\webview.cpp" />
+    <ClCompile Include="webview\wxIETest2\wxiepanel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{67323C94-E1A8-4C24-97E0-1A7C13127AA0}</ProjectGuid>
+    <RootNamespace>RiPE</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(WXWIN)\lib\vc_lib\mswu;$(WXWIN)\include;C:\Program Files (x86)\crypto\cryptopp561;$(THEMIDA)\include\C;$(BOOST)\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;__WXMSW__;NDEBUG;_WINDOWS;_USRDLL;NOPCH;RIPE_EXPORTS;__RIPE_STANDALONE;__MAPLESTORY;USING_PRECOMPILED_HEADERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(WXWIN)\lib\vc_lib;C:\Program Files (x86)\crypto\cryptopp561;$(SolutionDir)\lib\;$(BOOST)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw29u_adv.lib;wxmsw29u_aui.lib;wxmsw29u_core.lib;wxmsw29u_html.lib;wxmsw29u_richtext.lib;wxmsw29u_stc.lib;wxmsw29u_xrc.lib;wxbase29u_xml.lib;wxbase29u_net.lib;wxbase29u.lib;wxregexu.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxscintilla.lib;wxexpat.lib;kernel32.lib;user32.lib;gdi32.lib;comdlg32.lib;winspool.lib;winmm.lib;shell32.lib;comctl32.lib;ole32.lib;oleaut32.lib;uuid.lib;rpcrt4.lib;advapi32.lib;dbghelp.lib;psapi.lib;wsock32.lib;wininet.lib;cryptlib.lib;Ws2_32.lib;hwidauth.lib;libboost_thread-vc100-mt-s-1_47.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

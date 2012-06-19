@@ -1,0 +1,4 @@
+Failed to connect to pipe: \\.\pipe\ripe_dllBAADF00D.  Error Code: 2
+\\.\pipe\ripe_dll1EA8 has broken.  Terminating pipe.
+Failed to connect to pipe: \\.\pipe\ripe_dll37C0.  Error Code: 2
+Failed to connect to pipe: \\.\pipe\ripe_dll1C80.  Error Code: 2

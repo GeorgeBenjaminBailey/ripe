@@ -1,0 +1,5 @@
+#include "resource.h"
+
+aaaa ICON "../resources/apple.ico"
+
+#include "wx/msw/wx.rc"

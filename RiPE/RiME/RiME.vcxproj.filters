@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="beaengine">
+      <UniqueIdentifier>{669951b0-63e0-4f2e-b4bd-bfe6c1ab5e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="beaengine\Includes">
+      <UniqueIdentifier>{c348a970-97c7-4894-8656-22645de806a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RiME">
+      <UniqueIdentifier>{ec7708ad-0239-4184-b4f8-240d668a0547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RiME">
+      <UniqueIdentifier>{819d16d6-0d0b-41a8-8cef-b51eb7a6941f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webview">
+      <UniqueIdentifier>{49291e05-6e71-4e2e-a84d-ee6fbced4390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webview\wxIETest2">
+      <UniqueIdentifier>{5d184d9e-2587-4008-b627-807dc0e60050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webview\wxOSXWebkitCtrl">
+      <UniqueIdentifier>{ebfe387a-4d08-4c48-a22f-aae966079bb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webview\wxGtkWebKitCtrl">
+      <UniqueIdentifier>{b784805f-8c1c-433e-bfbe-919c5d526d8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\breakpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\RiME.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bea-reloc.cpp">
+      <Filter>beaengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\memreadwrite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="disassemblyDlg.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="enumModulesDlg.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="memscan.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="memscanner.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="RiMEApp.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="setCustomAddrDlg.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="..\webview\wxGtkWebKitCtrl\wxgtkwebkitctrl.cpp">
+      <Filter>webview\wxGtkWebKitCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\webview\wxIETest2\wxiepanel.cpp">
+      <Filter>webview\wxIETest2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\webview\webview.cpp">
+      <Filter>webview</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cloakdll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\millitime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+    <ClCompile Include="..\artProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\instructionLogger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hexconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\breakpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RiME.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hexconverter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="beaengine\BeaEngine.h">
+      <Filter>beaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="beaengine\Includes\basic_types.h">
+      <Filter>beaengine\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="beaengine\Includes\export.h">
+      <Filter>beaengine\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="beaengine\bea-reloc.h">
+      <Filter>beaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\memreadwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hookhop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memscan.hpp">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+    <ClInclude Include="disassemblyDlg.h">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+    <ClInclude Include="enumModulesDlg.h">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+    <ClInclude Include="memscanner.h">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+    <ClInclude Include="RiMEApp.h">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+    <ClInclude Include="setCustomAddrDlg.h">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+    <ClInclude Include="..\webview\wxGtkWebKitCtrl\wxgtkwebkitctrl.h">
+      <Filter>webview\wxGtkWebKitCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\webview\wxOSXWebkitCtrl\webkit.h">
+      <Filter>webview\wxOSXWebkitCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\webview\wxIETest2\wxiepanel.h">
+      <Filter>webview\wxIETest2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\webview\webview.h">
+      <Filter>webview</Filter>
+    </ClInclude>
+    <ClInclude Include="..\hwidauth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cloakdll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\millitime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+    <ClInclude Include="..\artProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\instructionLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

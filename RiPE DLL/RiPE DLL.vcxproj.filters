@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6c103692-03e4-44ca-8286-065570de18e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RiPE">
+      <UniqueIdentifier>{f9bfba31-9031-4b49-9a4c-1f1680b781d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RiPE">
+      <UniqueIdentifier>{9a880c17-279c-4129-b38b-0578b119877b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RiME">
+      <UniqueIdentifier>{43e3bcfc-f968-4727-b1f7-5e500d6fa565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RiME">
+      <UniqueIdentifier>{2dcac88d-b6b6-40b7-98c2-6a20375dd7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\moopledev">
+      <UniqueIdentifier>{dfbc327c-e341-42f1-b19e-8897db65dc5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\moopledev">
+      <UniqueIdentifier>{06617e80-f61c-4b32-8681-d6696acbcbf9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lasterror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ripe_dll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memreadwrite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\packet.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="hexconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="millitime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usefulFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ripecontainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packetitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\customfacade.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\genericfacade.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\operator.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\script.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\sendfacade.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\sendtofacade.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\wsasendfacade.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\wsasendtofacade.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="moopledev\maplecustomencryption.cpp">
+      <Filter>Source Files\moopledev</Filter>
+    </ClCompile>
+    <ClCompile Include="StringMangler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="breakpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RiME\memscan.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ripe_dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hookhop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lasterror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memreadwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\atohx.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\packet.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="hexconverter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="millitime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usefulFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ripecontainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packetitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\customfacade.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\genericfacade.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\operator.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\resource.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\script.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\script_variable.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\sendfacade.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\sendtofacade.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\wsasendfacade.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\wsasendtofacade.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="moopledev\maplecustomencryption.h">
+      <Filter>Header Files\moopledev</Filter>
+    </ClInclude>
+    <ClInclude Include="StringMangler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="breakpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\hookinterface.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiME\memscan.hpp">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

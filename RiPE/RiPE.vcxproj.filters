@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\RiPE">
+      <UniqueIdentifier>{69dc4ab0-9ebd-49bc-8b3e-c29c192c0bf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RiPE">
+      <UniqueIdentifier>{f8b1d18d-649d-4e1b-adf2-91f79cbf50d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\webview">
+      <UniqueIdentifier>{a6cc3f9b-f53f-4dd7-b0de-b7accea6046a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\webview">
+      <UniqueIdentifier>{2f7df2c1-6c89-41ca-a478-6c788a97dfdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\webview\wxIETest2">
+      <UniqueIdentifier>{98758299-fe8c-43a0-9024-53f22f5efb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\webview\wxIETest2">
+      <UniqueIdentifier>{22059b00-4a32-4688-a349-e967d604aa3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RiME">
+      <UniqueIdentifier>{65f84040-04a9-40cc-9c4d-d9f1c98de97d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RiME">
+      <UniqueIdentifier>{1bd8cdad-5c61-4545-961b-f8124285d260}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RiPE\communicationlayer.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\gameSelectMenu.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\genericfacade.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\hexspinctrl.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\hookinterface.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\OpcodesDlg.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\operator.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\packet.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\packetitem.hpp">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\partialpacket.hpp">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\resource.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\RiPEApp.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE\script_variable.h">
+      <Filter>Header Files\RiPE</Filter>
+    </ClInclude>
+    <ClInclude Include="webview\webview.h">
+      <Filter>Header Files\webview</Filter>
+    </ClInclude>
+    <ClInclude Include="webview\wxIETest2\wxiepanel.h">
+      <Filter>Header Files\webview\wxIETest2</Filter>
+    </ClInclude>
+    <ClInclude Include="wx_pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddPluginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="artProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="asmeditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="atohx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="breakpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cloakdll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameVersions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hexconverter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hookhop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inject.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectorGadgetMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lasterror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memreadwrite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="millitime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewScriptDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginSearchDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="processutility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RiPE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sortinglistview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringMangler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UploadScriptDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usefulFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="webutility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="privilege.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adBrowserDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RiME\memscan.hpp">
+      <Filter>Header Files\RiME</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RiPE\communicationlayer.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\gameSelectMenu.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\genericfacade.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\hexspinctrl.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\main.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\OpcodesDlg.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\operator.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\packet.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE\RiPEApp.cpp">
+      <Filter>Source Files\RiPE</Filter>
+    </ClCompile>
+    <ClCompile Include="webview\webview.cpp">
+      <Filter>Source Files\webview</Filter>
+    </ClCompile>
+    <ClCompile Include="webview\wxIETest2\wxiepanel.cpp">
+      <Filter>Source Files\webview\wxIETest2</Filter>
+    </ClCompile>
+    <ClCompile Include="webutility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPluginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="adSupport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="artProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="asmeditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="breakpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cloakdll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hexconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InjectorGadgetMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lasterror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="memreadwrite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="millitime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewScriptDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginSearchDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="processutility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RiPE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sortinglistview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringMangler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UploadScriptDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usefulFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="adBrowserDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RiME\memscan.cpp">
+      <Filter>Source Files\RiME</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
