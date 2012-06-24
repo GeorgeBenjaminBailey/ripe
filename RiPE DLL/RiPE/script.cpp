@@ -866,7 +866,8 @@ namespace Script
         }
         else if( name == "send" )
         {
-            m_worker.AddPacket(PacketProcessStruct(parentLocals["$0"].v.AsString(), hookIntf, __SEND_PACKET, 0));
+            m_worker.AddPacket(PacketProcessStruct(parentLocals["$0"].v.AsString(), hookIntf, __SEND_PACKET, 
+                    RiPE::Container::GetHackDLL()->GetSocket()));
         }
         else if( name == "setdr" ) // Set a DR register.  Params:  (hookLocation, function, drToUse)
         {

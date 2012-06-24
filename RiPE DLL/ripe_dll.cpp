@@ -123,6 +123,10 @@ namespace
     void SaveScripts(const std::string &message) {
         RiPE::Container::GetHackDLL()->SaveScripts();
     }
+    void SetSocket(const std::string &message) {
+        SOCKET s = atoi(message.c_str());
+        RiPE::Container::GetHackDLL()->SetSocket(s);
+    }
 
     void ScriptTimer() {
         while (continueRunning) {
@@ -193,6 +197,7 @@ HackDLL::HackDLL()
 {
     RiPE::Container::SetHackDLL(this);
     hookIntf = NULL;
+    m_currentSocket = 0;
     PopulateOpcodes();
 }
 HackDLL::~HackDLL() {
@@ -362,6 +367,7 @@ void HackDLL::PopulateOpcodes()
     m_opcode_map[_str(ToggleScript)] = ::ToggleScript;
     m_opcode_map[_str(SaveScripts)]  = ::SaveScripts;
     m_opcode_map[_str(ProcessHotKey)] = ::ProcessHotKey;
+    m_opcode_map[_str(SetSocket)] = ::SetSocket;
 }
 
 HWND HackDLL::GetProcessHWND()
@@ -458,6 +464,14 @@ void HackDLL::ToggleScript(const bool enable, const std::string &scriptName) {
 }
 void HackDLL::SaveScripts() {
     scriptManager.SaveScripts();
+}
+
+SOCKET HackDLL::GetSocket() {
+    return m_currentSocket;
+}
+
+void HackDLL::SetSocket(const SOCKET s) {
+    m_currentSocket = s;
 }
 
 BlockStatus HackDLL::GetBlockStatus(const PacketFlag type, std::string &packetString, 

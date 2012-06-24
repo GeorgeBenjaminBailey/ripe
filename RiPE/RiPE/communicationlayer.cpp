@@ -205,6 +205,7 @@ CommunicationLayer::CommunicationLayer() {
     m_rLogMutex = boost::shared_ptr<boost::mutex>(new boost::mutex());
     m_hookSend = false;
     m_hookRecv = false;
+    m_currentSocket = 0;
     Init();
 }
 
@@ -257,6 +258,9 @@ void CommunicationLayer::InitDll(const wxString &pipeName) {
         SendMessageToPipe(wxString::Format("AddScript %s\n%s", 
                 scriptIter->first, scriptIter->second), MakePipeName(RIPE_DLL));
     }
+
+    // Tell RiPE DLL the current socket
+    SendMessageToPipe(wxString::Format("SetSocket %i", m_currentSocket), MakePipeName(RIPE_DLL));
 }
 
 bool CommunicationLayer::HasPipe(const wxString &pipeName) {
@@ -446,6 +450,11 @@ void CommunicationLayer::SaveScripts() {
 
 void CommunicationLayer::ProcessHotKey(const DWORD vkCode) {
     SendMessageToPipe(wxString::Format("ProcessHotKey %i", vkCode), MakePipeName(RIPE_DLL));
+}
+
+// Sets the socket to use for sending packets
+void CommunicationLayer::SetSocket(const int s) {
+    SendMessageToPipe(wxString::Format("SetSocket %i", s), MakePipeName(RIPE_DLL));
 }
 
 bool CommunicationLayer::LoadScript(const wxString &filename, const wxString &name) {

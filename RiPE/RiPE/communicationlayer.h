@@ -74,6 +74,7 @@ private:
     bool                               m_hookSend;
     bool                               m_hookRecv;
     int m_pId;
+    int m_currentSocket;
 
     void Init();
 
@@ -90,6 +91,7 @@ public:
     void RemovePacketFromSBlock(const wxString &type, const wxString &packet1, const wxString &packet2);
     void RemovePacketFromRBlock(const wxString &type, const wxString &packet1, const wxString &packet2);
     void ProcessHotKey(const DWORD vkCode);
+    void CommunicationLayer::SetSocket(const int s);
     // This needs to mimic the script manager to a small extent so that it knows the available script names
     bool AddScript( const wxString &scriptName, const wxString &scriptText);
     void Connect(const int pid);

@@ -104,6 +104,8 @@ namespace RiPE
         void DeleteScript(const std::string &scriptName);
         void ToggleScript(const bool enable, const std::string &scriptName);
         void SaveScripts();
+        SOCKET GetSocket();
+        void SetSocket(const SOCKET s);
 
         void ProcessSendEvent(std::vector<unsigned char> &packet);
         void ProcessRecvEvent(std::vector<unsigned char> &packet);
@@ -136,6 +138,7 @@ namespace RiPE
 
         // a buffer that stores messages that have never been sent
         std::queue<std::string> m_message_buffer;
+        SOCKET m_currentSocket;
         Script::ScriptManager scriptManager;
         HookInterface *hookIntf;
     };

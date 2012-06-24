@@ -1295,6 +1295,7 @@ void RiPE::OnTreeCtrl1ItemActivated(wxTreeEvent& event)
         {
             SpinCtrl2->SetValue( tempContainerPtr->GetSocket() );
             SpinCtrl3->SetValue( tempContainerPtr->GetSocket() );
+            communicationLayer.SetSocket(SpinCtrl2->GetValue());
         }
 	}
 	//TextCtrl2->SetLabel( TreeCtrl1->GetItemText( event.GetItem() ) );
@@ -1314,6 +1315,7 @@ void RiPE::OnTreeCtrl2ItemActivated(wxTreeEvent& event)
         {
             SpinCtrl2->SetValue( tempContainerPtr->GetSocket() );
             SpinCtrl3->SetValue( tempContainerPtr->GetSocket() );
+            communicationLayer.SetSocket(SpinCtrl2->GetValue());
         }
 	}
 	//TextCtrl2->SetLabel( TreeCtrl2->GetItemText( event.GetItem() ) );
@@ -2777,11 +2779,13 @@ void RiPE::OnRiPESTDatabase(wxCommandEvent& event) {
 void RiPE::OnSpinCtrl2Change(wxSpinEvent& event)
 {
     SpinCtrl3->SetValue(SpinCtrl2->GetValue());
+    communicationLayer.SetSocket(SpinCtrl2->GetValue());
 }
 
 void RiPE::OnSpinCtrl3Change(wxSpinEvent& event)
 {
     SpinCtrl2->SetValue(SpinCtrl3->GetValue());
+    communicationLayer.SetSocket(SpinCtrl3->GetValue());
 }
 
 // On open script dialog
