@@ -372,7 +372,7 @@ namespace Script
             std::string::const_iterator start, end;
             start = expLine.begin();
             end   = expLine.end();
-            boost::regex expression( "\\)|\\(|(//.*)|(\"[^\"]*\")|('[^']*')|([_a-zA-Z][_a-zA-Z0-9]*)|(0x[0-9a-fA-F]+)|([0-9]+)|(={2})|(/{2})|(\\.{2})|(\\|{2})|(&{2})|(\\-{2})|(\\+{2})|([!<>]=)|([!%&/=+.,><\"'\\[\\]\\^\\*\\+\\|\\-\\.])",
+            boost::regex expression( "\\)|\\(|(//.*)|(\"[^\"]*\")|('[^']*')|([_a-zA-Z][_a-zA-Z0-9]*)|(0x[0-9a-fA-F]+)|([0-9]+)|(={2})|(/{2})|(\\.{2})|(\\|{2})|(&{2})|(\\-{2})|(\\+{2})|([!<>]=)|([!%&/=,><\"'])|([]*+|.[^-])",
                     boost::regex::extended ); // leave out the : because it isn't actually used
             boost::match_results<std::string::const_iterator> what;
             boost::match_flag_type flags = boost::match_default;
@@ -402,6 +402,10 @@ namespace Script
 
         // Change from infix to postfix
         // Don't change function definition order
+       
+        char buf[100];
+        sprintf(buf, "%i", tokens.size());
+        MessageBoxA(0, buf, "", 0);
         if( tokens.size() > 0 && tokens.front().name != "def" )
             InfixToPostfix(tokens);
     }
@@ -2015,7 +2019,7 @@ ReturnLocation7:
         // Convert all tabs to spaces
         std::size_t it = code.find("\t");
         while (it != std::string::npos) {
-            code.replace(it, it+1, "    ");
+            code.replace(it, 1, "    ");
             it = code.find("\t");
         }
 
