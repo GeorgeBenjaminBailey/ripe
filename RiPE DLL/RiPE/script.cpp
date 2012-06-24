@@ -402,10 +402,6 @@ namespace Script
 
         // Change from infix to postfix
         // Don't change function definition order
-       
-        char buf[100];
-        sprintf(buf, "%i", tokens.size());
-        MessageBoxA(0, buf, "", 0);
         if( tokens.size() > 0 && tokens.front().name != "def" )
             InfixToPostfix(tokens);
     }
@@ -1572,14 +1568,15 @@ ReturnLocation7:
         // Check to see if logical (block) expression (if, for, s, r, time, etc.)
         if( line->tokens.size() > 0 && 
             (line->tokens.front().name == "if" ||
+            line->tokens.front().name == "else" ||
             line->tokens.front().name == "while" ||
             line->tokens.front().name == "for") )
         {
             line->tokens.pop_front(); // pop the "if"
             canEnterBlock = ExecuteExpression( line, parentLocals, myLocals ).v != 0;
-        }
-        else 
+        } else {
             ExecuteExpression( line, parentLocals, myLocals );
+        }
 
         return canEnterBlock;
     }
@@ -1608,6 +1605,7 @@ ReturnLocation7:
     {
         std::map<std::string, Variable> myLocals;
         bool canEnterBlock = false;
+        bool lastCouldEnter = false; // true if the last line checked was true, else false
         bool isLoop = false; // keeps track of whether the last line was a loop (for, while)
         Line lastLine;  // keeps track of the last line to execute in case we need to execute it again
 
@@ -1630,8 +1628,17 @@ ReturnLocation7:
                 else
                     isLoop = false;
 
-                lastLine      = *(Line *)&b.containers.front();
-                canEnterBlock = ExecuteLine( b, tempLocals, myLocals, depth );
+                Line line = *(Line *)&(b.containers.front());
+                if (lastLine.type == Container::TYPE_LINE && lastLine.tokens.size() > 0 &&
+                        lastLine.tokens.front().name == "if" && !lastCouldEnter &&
+                        line.tokens.size() > 0 && line.tokens.front().name == "else") {
+                    canEnterBlock = true;
+                    ExecuteLine( b, tempLocals, myLocals, depth );
+                } else {
+                    canEnterBlock = ExecuteLine( b, tempLocals, myLocals, depth );
+                }
+                lastLine = line;
+                lastCouldEnter = canEnterBlock;
             }
             else if( b.containers.front().type == Container::TYPE_BLOCK && canEnterBlock )
             {
