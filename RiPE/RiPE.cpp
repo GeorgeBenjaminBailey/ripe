@@ -1291,7 +1291,7 @@ void RiPE::OnTreeCtrl1ItemActivated(wxTreeEvent& event)
 		TextCtrl2->SetLabel( tmpstr );
 
         if( gsv == OTHER_SEND || gsv == OTHER_SENDTO || gsv == OTHER_WSASEND ||
-            gsv == OTHER_WSASENDTO )
+            gsv == OTHER_WSASENDTO || gsv == OTHER_SENDALL )
         {
             SpinCtrl2->SetValue( tempContainerPtr->GetSocket() );
             SpinCtrl3->SetValue( tempContainerPtr->GetSocket() );
@@ -1311,7 +1311,7 @@ void RiPE::OnTreeCtrl2ItemActivated(wxTreeEvent& event)
 		TextCtrl2->SetLabel( tmpstr );
 
         if( gsv == OTHER_SEND || gsv == OTHER_SENDTO || gsv == OTHER_WSASEND ||
-            gsv == OTHER_WSASENDTO )
+            gsv == OTHER_WSASENDTO || gsv == OTHER_SENDALL )
         {
             SpinCtrl2->SetValue( tempContainerPtr->GetSocket() );
             SpinCtrl3->SetValue( tempContainerPtr->GetSocket() );

@@ -212,7 +212,7 @@ HackDLL::~HackDLL() {
 HackDLL * HackDLL::GetInstance()
 {
     if( !m_instance ) // Only allow one instance of class to be generated
-        m_instance = new HackDLL;
+        m_instance = new HackDLL();
     
     return m_instance;
 }
