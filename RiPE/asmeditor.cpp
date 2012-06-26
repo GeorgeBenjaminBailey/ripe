@@ -23,7 +23,7 @@ namespace
         _("send recv block ") + // networking
         _("messagebox messageboxa logsend ") + // output
         _("cleardr clearint3 setdr setint3 ") + // debugging
-        _("malloc free read write addressof ") + // memory
+        _("malloc free read write addressof getprocaddress ") + // memory
         _("scan len spoofreturn vtoa "); // utility
 }
 

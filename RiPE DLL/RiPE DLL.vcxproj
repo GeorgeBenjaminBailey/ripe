@@ -90,6 +90,7 @@
     <ClCompile Include="RiPE\operator.cpp" />
     <ClCompile Include="RiPE\packet.cpp" />
     <ClCompile Include="RiPE\script.cpp" />
+    <ClCompile Include="RiPE\sendallfacade.cpp" />
     <ClCompile Include="RiPE\sendfacade.cpp" />
     <ClCompile Include="RiPE\sendtofacade.cpp" />
     <ClCompile Include="RiPE\wsasendfacade.cpp" />
@@ -118,6 +119,7 @@
     <ClInclude Include="RiPE\resource.h" />
     <ClInclude Include="RiPE\script.h" />
     <ClInclude Include="RiPE\script_variable.h" />
+    <ClInclude Include="RiPE\sendallfacade.h" />
     <ClInclude Include="RiPE\sendfacade.h" />
     <ClInclude Include="RiPE\sendtofacade.h" />
     <ClInclude Include="RiPE\wsasendfacade.h" />

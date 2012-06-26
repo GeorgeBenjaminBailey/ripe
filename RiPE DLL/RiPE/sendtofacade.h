@@ -11,6 +11,9 @@ public:
         usingHardwareBreakpoints = true;
     }
 
+    SendToHookFacade(const bool useHardwareBreakpoints) : HookInterface(useHardwareBreakpoints){
+    }
+
     ~SendToHookFacade()
     {
         ;

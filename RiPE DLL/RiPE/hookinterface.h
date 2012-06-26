@@ -23,6 +23,14 @@ public:
         usingHardwareBreakpoints = true;
     }
 
+    HookInterface(const bool useHardwareBreakpoints) {
+        hookRecvScript   = NULL;
+        hookSendScript   = NULL;
+        packetRecvScript = NULL;
+        packetSendScript = NULL;
+        usingHardwareBreakpoints = useHardwareBreakpoints;
+    }
+
     ~HookInterface()
     {
         if( hookRecvScript != NULL )

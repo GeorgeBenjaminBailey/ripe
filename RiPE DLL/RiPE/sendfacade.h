@@ -6,9 +6,12 @@
 class SendHookFacade : public HookInterface
 {
 public:
-    SendHookFacade()
+    SendHookFacade() : HookInterface()
     {
         usingHardwareBreakpoints = true;
+    }
+
+    SendHookFacade(const bool useHardwareBreakpoints) : HookInterface(useHardwareBreakpoints){
     }
 
     ~SendHookFacade()

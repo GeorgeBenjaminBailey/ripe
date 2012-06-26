@@ -140,6 +140,7 @@ void gameSelectMenu::LoadDefaultPlugins()
     // Public
     gp.scripts.clear();
     gp.name = "Other";
+    gp.scripts.push_back( GameScript("All Send / Recv", OTHER_SENDALL) );
     gp.scripts.push_back( GameScript("Send / Recv", OTHER_SEND) );
     gp.scripts.push_back( GameScript("SendTo / RecvFrom", OTHER_SENDTO) );
     gp.scripts.push_back( GameScript("WSASend / WSARecv", OTHER_WSASEND) );

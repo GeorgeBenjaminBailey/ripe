@@ -11,6 +11,9 @@ public:
         usingHardwareBreakpoints = true;
     }
 
+    WSASendHookFacade(const bool useHardwareBreakpoints) : HookInterface(useHardwareBreakpoints){
+    }
+
     ~WSASendHookFacade()
     {
         ;

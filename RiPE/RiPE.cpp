@@ -2590,6 +2590,10 @@ void RiPE::RefreshHookInterface()
         communicationLayer.AddScript( wxT("\\") + curGame.GetScriptName(), curGame.GetScriptText() );
         communicationLayer.ToggleScript( wxT("\\") + curGame.GetScriptName(), true );
         break;
+    case OTHER_SENDALL:
+        defaultConfigLocation = curDir + "RiPE - Other.ini";
+        hookIntf = _str(SendAllHookFacade);
+        break;
     case OTHER_SEND:
         defaultConfigLocation = curDir + "RiPE - Other.ini";
         hookIntf = _str(SendHookFacade);
@@ -2666,6 +2670,7 @@ void RiPE::RefreshHookInterface()
     {
     case CUSTOM:
         break;
+    case OTHER_SENDALL:
     case OTHER_SEND:
     case OTHER_SENDTO:
     case OTHER_WSASEND:

@@ -5,6 +5,7 @@
 
 enum GameScriptVersion
 {
+    OTHER_SENDALL,
     OTHER_SEND,
     OTHER_SENDTO,
     OTHER_WSASEND,

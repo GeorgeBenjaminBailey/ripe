@@ -105,14 +105,16 @@ ErrorMessage SendPacketToProcess(std::string strPacketBuf, HookInterface *hIntf,
         errorCode = __DC_HACK;*/
     else
     {
-        switch(pktTyp)
-        {
-        case __SEND_PACKET:
-            hIntf->PacketSend(cstrPacketBuffer, s); 
-            break;
-        case __RECV_PACKET:
-            hIntf->PacketRecv(cstrPacketBuffer, s); 
-            break;
+        if (hIntf != NULL) {
+            switch(pktTyp)
+            {
+            case __SEND_PACKET:
+                hIntf->PacketSend(cstrPacketBuffer, s); 
+                break;
+            case __RECV_PACKET:
+                hIntf->PacketRecv(cstrPacketBuffer, s); 
+                break;
+            }
         }
     }
     delete [] cstrPacketBuffer; //Free memory

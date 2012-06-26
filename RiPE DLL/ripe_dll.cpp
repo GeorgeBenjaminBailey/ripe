@@ -20,6 +20,7 @@
 #include "RiPE/atohx.h"
 
 #include "RiPE/customfacade.h"
+#include "RiPE/sendallfacade.h"
 #include "RiPE/sendfacade.h"
 #include "RiPE/sendtofacade.h"
 #include "RiPE/wsasendfacade.h"
@@ -404,7 +405,10 @@ void HackDLL::SetHookInterface(const std::string &object) {
         hookIntf = new WSASendHookFacade();
     } else if (object == _str(WSASendToHookFacade)) {
         hookIntf = new WSASendToHookFacade();
+    } else if (object == _str(SendAllHookFacade)) {
+        hookIntf = new SendAllHookFacade();
     }
+    scriptManager.SetHookInterface(hookIntf);
 }
 void HackDLL::HookSend(const bool enable) {
     if (hookIntf != NULL) {
